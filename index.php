@@ -75,7 +75,7 @@ $id_user = $_SESSION['id_user'];
             </div>
 
             <div class="container">
-                <h2 class="text-center my-5">Menu Andalan Kami</h2>
+                <h2 class="section-title">Pilih Size Box</h2>
                 <div class="row">
                     <?php
                 // Koneksi ke database
@@ -152,9 +152,9 @@ $id_user = $_SESSION['id_user'];
 
                             <a href="pesan-menu/rekomendasi/rekomendasi.php?id_rek=<?php echo $row['id_rek']; ?>"
                                 style="text-decoration: none; color: inherit">
-                                <div class="card h-100 mx-2">
+                                <div class="card h-100 mx-2" style="width: 300px; height: 400px;">
                                     <!-- Gambar -->
-                                    <img src="<?= $gambar; ?>" class="card-img-top img-fluid h-100"
+                                    <img src="<?= $gambar; ?>" class="card-img-top img-fluid h-100 w-100"
                                         alt="<?= $row['nama_menu']; ?>" />
                                     <div class="card-body mb-0">
                                         <h5 class="card-title mb-2"><?= $row['nama_menu']; ?></h5>
