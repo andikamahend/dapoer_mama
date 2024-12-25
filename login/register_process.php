@@ -5,7 +5,7 @@ session_start(); // Memulai sesi
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "catering"; // Replace with your database name
+$dbname = "catering"; // Ganti dengan nama database Anda
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

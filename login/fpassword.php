@@ -6,11 +6,26 @@
         <title>Forgot Password</title>
         <!-- Custom CSS Link -->
         <link rel="stylesheet" href="style.css">
+        <style>
+        .back-button {
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+            /* Jarak dari tepi */
+            position: absolute;
+            /* Menggunakan posisi absolut */
+            top: 4rem;
+            /* Jarak dari atas */
+            left: 5rem;
+            /* Jarak dari kiri */
+        }
+        </style>
     </head>
 
     <body>
+        <a href="../index.php" class="input__button__shadow back-button">Back</a>
         <div class="input__container">
-            <div class="shadow__input"></div>
             <form action="verify_code_process.php" method="POST" onsubmit="showMessage()">
                 <h2 style="color: black;">Forgot Password</h2>
                 <div class="input__button__shadow">
@@ -27,11 +42,8 @@
                     <a href="register.php">Sign up</a>
                     <a href="login.php">Sign in</a>
                 </div>
-                <div style="display: flex; justify-content: space-between;">
-                    <button type="button" onclick="window.location.href='index.php'"
-                        class="input__button__shadow">kembali</button>
-                    <button type="submit" class="input__button__shadow">login</button>
-                </div>
+                <button type="submit" class="input__button__shadow">login</button>
+
             </form>
         </div>
     </body>
